@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/security/data-integrity/v1"
+  ],
+  "type": ["VerifiableCredential", "ContainerImageCredential"],
+  "issuer": "did:key:z6MkvLKJKgXgkKCzK5JmZZV8P5E3R7Y2J8Z9A1B2C3D",
+  "id": "urn:vcid:0x8f7e9d6c5b4a3f2e1d0c9b8a7f6e5d4c",
+  "issuanceDate": "2025-07-30T10:21:00Z",
+  "expirationDate": "2026-07-30T10:21:00Z",
+  "credentialSubject": {
+    "image": {
+      "manifestDigest": "sha256:a3b2c1d0e9f8g7h6i5j4k3l2m1n0o9p8q7r6s5t4u3v2w1x0",
+      "reference": "docker.io/myorg/myapp@sha256:a3b2c1d0e9f8g7h6i5j4k3l2m1n0o9p8q7r6s5t4u3v2w1x0"
+    },
+    "cbc": {
+      "chainId": 421614,
+      "contractAddress": "0x145Dd3e4e8aD5B2E6c4F3d2c1b0a9e8f7d6c5b4a"
+    },
+    "buildMetadata": {
+      "buildUrl": "https://github.com/myorg/myapp/actions/runs/123456789",
+      "commitSha": "abc1234567890def",
+      "timestamp": "2025-07-30T10:20:00Z"
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "verificationMethod": "did:key:z6MkvLKJKgXgkKCzK5JmZZV8P5E3R7Y2J8Z9A1B2C3D#z6MkvLKJKgXgkKCzK5JmZZV8P5E3R7Y2J8Z9A1B2C3D",
+    "created": "2025-07-30T10:21:00Z",
+    "signatureValue": "Hp7xE4rNfQ0zA1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9t0U1v2W3x4Y5z6"
+  }
+}

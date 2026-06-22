@@ -1,0 +1,35 @@
+# CBC-Provenance Issuer Dependencies
+# Python 3.11+
+
+# DID and Verifiable Credentials
+didkit==0.4.1                          # W3C DID Kit for Ed25519 operations
+cryptography==44.0.1                   # Ed25519 and crypto utilities
+jsonld==0.21.1                         # JSON-LD processing for W3C standards
+
+# Web Framework
+fastapi==0.115.1                       # Async web framework
+uvicorn==0.34.0                        # ASGI server
+pydantic==2.11.1                       # Data validation
+
+# Blockchain Interaction
+web3==7.10.0                           # Ethereum/Arbitrum interaction
+eth-keys==0.6.1                        # Ethereum key management
+
+# IPFS
+ipfshttpclient==0.8.0                  # IPFS HTTP client
+
+# Utilities
+python-dotenv==1.1.0                   # Environment variable management
+requests==2.32.3                       # HTTP client
+aiohttp==3.10.5                        # Async HTTP client
+pyyaml==6.0.2                          # YAML support
+
+# Testing
+pytest==8.0.0                          # Test framework
+pytest-asyncio==0.24.0                 # Async test support
+pytest-cov==6.0.0                      # Coverage reporting
+
+# Development
+black==24.10.0                         # Code formatter
+pylint==3.2.3                          # Code linter
+mypy==1.14.0                           # Type checking
